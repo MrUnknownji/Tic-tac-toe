@@ -1,0 +1,104 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg: #131515;
+  --containerColor: #998c4a;
+  --circleWinBg: #a0fa96;
+  --buttonBg: #023047;
+  --xWinBg: #075164;
+  --color2: #decea5;
+}
+
+body {
+  background-color: var(--bg);
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+h1 {
+  text-align: center;
+  margin: 20px;
+  font-size: 2.5rem;
+}
+
+.container {
+  background-color: var(--containerColor);
+  width: 50vh;
+  height: 50vh;
+  margin: 40px auto;
+  display: grid;
+  gap: 10px;
+  padding: 10px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  border-radius: 10px;
+}
+.div-button {
+  background-color: var(--circleWinBg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 3rem;
+  user-select: none;
+  color: black;
+  border-radius: 5px;
+  font-weight: 600;
+}
+.div-button:hover {
+  opacity: 0.8;
+}
+.popup-div {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #023047ec;
+  padding: 30px;
+  font-size: 3rem;
+  border-radius: 10px;
+}
+button {
+  padding: 10px 20px;
+  background-color: aqua;
+  border: none;
+  border-radius: 25px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 250ms;
+}
+button:hover {
+  opacity: 0.8;
+}
+.current-turn {
+  text-align: center;
+  font-size: 1.5rem;
+}
+div[open] {
+  animation: fadeIn 500ms ease;
+}
+div[close] {
+  animation: fadeOut 500ms ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+}
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+  }
+}
