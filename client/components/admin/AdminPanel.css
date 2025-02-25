@@ -1,0 +1,219 @@
+/* AdminPanel.css */
+
+/* Container for the admin panel */
+.admin-panel {
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  padding: 2rem;
+  max-width: 800px;
+  margin: 2rem auto;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+}
+
+/* Header area with title and back button */
+.admin-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 32px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.admin-header h2 {
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.return-button {
+  padding: 8px 16px;
+  border-radius: var(--border-radius);
+  background: var(--accent-color);
+  border: none;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all var(--transition-speed);
+}
+
+.return-button:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+}
+
+/* Password input area for admin authentication */
+.admin-password {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.admin-password input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  background: var(--card-bg);
+  color: var(--text-primary);
+}
+
+/* Tabs for switching between Users and Matches */
+.admin-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.admin-tabs button {
+  padding: 0.5rem 1rem;
+  background: var(--primary-color);
+  border: none;
+  border-radius: var(--border-radius);
+  color: var(--secondary-color);
+  cursor: pointer;
+  transition: background var(--transition-speed);
+}
+
+.admin-tabs button.active,
+.admin-tabs button:hover {
+  background: var(--accent-color);
+}
+
+/* Users section styling */
+.admin-users {
+  margin-top: 1rem;
+}
+
+.admin-user {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.admin-user:last-child {
+  border-bottom: none;
+}
+
+.admin-user span {
+  font-size: 1rem;
+}
+
+.admin-user button {
+  padding: 0.3rem 0.8rem;
+  background: var(--error-color);
+  border: none;
+  border-radius: var(--border-radius);
+  color: var(--secondary-color);
+  cursor: pointer;
+  transition: background var(--transition-speed);
+}
+
+.admin-user button:hover {
+  background: darkred;
+}
+
+/* Matches section styling */
+.admin-matches {
+  margin-top: 1rem;
+}
+
+.admin-match {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.admin-match:last-child {
+  border-bottom: none;
+}
+
+.admin-match span {
+  font-size: 1rem;
+}
+
+.admin-match button {
+  padding: 0.3rem 0.8rem;
+  background: var(--error-color);
+  border: none;
+  border-radius: var(--border-radius);
+  color: var(--secondary-color);
+  cursor: pointer;
+  transition: background var(--transition-speed);
+}
+
+.admin-match button:hover {
+  background: darkred;
+}
+
+/* Bulk actions for matches */
+.bulk-actions {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.bulk-actions button {
+  padding: 0.5rem 1rem;
+  background: var(--accent-color);
+  border: none;
+  border-radius: var(--border-radius);
+  color: var(--secondary-color);
+  cursor: pointer;
+  transition: background var(--transition-speed);
+}
+
+.bulk-actions button:hover {
+  background: var(--accent-color-hover);
+}
+
+/* Add pagination styling */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.5rem;
+  gap: 1rem;
+}
+
+.pagination-button {
+  padding: 0.5rem 1rem;
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  color: var(--text-primary);
+  cursor: pointer;
+  transition: all var(--transition-speed);
+}
+
+.pagination-button:hover:not(:disabled) {
+  background: var(--border-color);
+  transform: translateY(-2px);
+}
+
+.pagination-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.pagination-info {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+.loading-spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  color: var(--text-secondary);
+  font-size: 1.2rem;
+} 

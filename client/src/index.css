@@ -1,0 +1,66 @@
+:root {
+    --primary-bg: #1A1C1E;
+    --card-bg: #242628;
+    --accent-color: #7B5CFA;
+    --accent-color-hover: #9277FF;
+    --text-primary: #FFFFFF;
+    --text-secondary: #A0A0A0;
+    --border-color: #2F3234;
+    --success-color: #4CAF50;
+    --warning-color: #FFC107;
+    --error-color: #FF4B4B;
+    --chart-green: #50C878;
+    --chart-orange: #FFA500;
+    --border-radius: 12px;
+    --card-padding: 24px;
+    --transition-speed: 0.3s;
+    --shadow-color: rgba(0, 0, 0, 0.2);
+    --card-bg-hover: #2d2f31;
+
+    font-family: "Inter", sans-serif;
+    line-height: 1.6;
+    font-weight: 400;
+
+    color-scheme: light dark;
+    color: var(--text-primary);
+    background-color: var(--primary-bg);
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+}
+
+[data-theme="light"] {
+    --primary-bg: #F8F8FB;
+    --card-bg: #FFFFFF;
+    --text-primary: #1A1C1E;
+    --text-secondary: #666666;
+    --border-color: #DFE3FA;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+    --card-bg-hover: #F8F8FB;
+    --primary-color: #F8F8FB;
+    --secondary-color: #1a1a1a;
+    --gradient-bg: linear-gradient(135deg, #F8F8FB, #ffffff);
+    --glass-bg: rgba(255, 255, 255, 0.98);
+    --icon-invert: 0;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    place-items: center;
+    background: var(--gradient-bg);
+    color: var(--text-primary);
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+#root {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+}
